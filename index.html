@@ -150,6 +150,41 @@
                 text-align: center;
             }
         }
+
+        .editor-profile {
+            display: flex;
+            align-items: start;
+            gap: 2rem;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.02);
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+
+        .editor-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--accent-color);
+        }
+
+        .editor-info {
+            flex: 1;
+        }
+
+        @media (max-width: 768px) {
+            .editor-profile {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .editor-image {
+                width: 150px;
+                height: 150px;
+            }
+        }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600&display=swap" rel="stylesheet">
 </head>
@@ -212,10 +247,13 @@
             
             <h3>सम्पादक परिचय</h3>
             <div class="editor-profile">
-                <h4>शशांक सिग्देल</h4>
-                <p>मुख्य सम्पादक</p>
-                <p>सडबरी नेपाली समाजको वेबसाइट र सामाजिक सञ्जालको मुख्य सम्पादक</p>
-                <p>सम्पर्क: editor@sudburynepali.ca</p>
+                <img src="shashank.jpg" alt="शशांक सिग्देल" class="editor-image">
+                <div class="editor-info">
+                    <h4>शशांक सिग्देल</h4>
+                    <p>मुख्य सम्पादक</p>
+                    <p>सडबरी नेपाली समाजको वेबसाइट र सामाजिक सञ्जालको मुख्य सम्पादक</p>
+                    <p>सम्पर्क: editor@sudburynepali.ca</p>
+                </div>
             </div>
         </section>
     </main>
@@ -248,3 +286,4 @@
     </footer>
 </body>
 </html>
+
