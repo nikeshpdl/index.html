@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>सडबरी नेपाली समाज - क्यानाडाको नेपाली समुदायको आवाज</title>
+    <style>
+        :root {
+            --primary-color: #C8102E;  /* नेपाली झण्डाको रातो */
+            --accent-color: #003893;   /* नेपाली झण्डाको नीलो */
+            --text-color: #333;
+            --background-color: #F5F5F5;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo img {
+            height: 60px;
+        }
+
+        nav {
+            background-color: var(--accent-color);
+            padding: 0.5rem 0;
+        }
+
+        nav ul {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .news-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .news-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .news-content {
+            padding: 1.5rem;
+        }
+
+        .event-list {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .event-card {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .about-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+
+        footer {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="nepal-flag.png" alt="नेपाली झण्डा">
+                <h1>सडबरी नेपाली समाज</h1>
+            </div>
+            <div class="contact-info">
+                <p>सम्पर्क: +1 (705) XXX-XXXX</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">गृहपृष्ठ</a></li>
+            <li><a href="#news">समाचार</a></li>
+            <li><a href="#events">कार्यक्रमहरू</a></li>
+            <li><a href="#resources">सूचना तथा स्रोतहरू</a></li>
+            <li><a href="#gallery">ग्यालरी</a></li>
+            <li><a href="#about">हाम्रोबारे</a></li>
+            <li><a href="#contact">सम्पर्क</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="news">
+            <h2>ताजा समाचार</h2>
+            <div class="news-grid">
+                <article class="news-card">
+                    <img src="dashain.jpg" alt="दशैं कार्यक्रम">
+                    <div class="news-content">
+                        <h3>सडबरीमा दशैं कार्यक्रम सम्पन्न</h3>
+                        <p>यस वर्षको दशैं कार्यक्रम भव्य रूपमा सम्पन्न भयो...</p>
+                        <a href="#" class="read-more">पूरा पढ्नुहोस्</a>
+                    </div>
+                </article>
+                <!-- Add more news cards -->
+            </div>
+        </section>
+
+        <section id="events">
+            <h2>आगामी कार्यक्रमहरू</h2>
+            <div class="event-list">
+                <div class="event-card">
+                    <h3>तीज विशेष कार्यक्रम</h3>
+                    <p>मिति: २०२४ सेप्टेम्बर १५</p>
+                    <p>स्थान: सडबरी कम्युनिटी हल</p>
+                </div>
+                <!-- Add more events -->
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>हाम्रोबारे</h2>
+            <p>सडबरी नेपाली समाज क्यानाडाको सडबरी र वरपरका क्षेत्रमा बसोबास गर्ने नेपाली समुदायको आधिकारिक संस्था हो।</p>
+            
+            <h3>सम्पादक परिचय</h3>
+            <div class="editor-profile">
+                <h4>शशांक सिग्देल</h4>
+                <p>मुख्य सम्पादक</p>
+                <p>सडबरी नेपाली समाजको वेबसाइट र सामाजिक सञ्जालको मुख्य सम्पादक</p>
+                <p>सम्पर्क: editor@sudburynepali.ca</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>सम्पर्क</h3>
+                <p>इमेल: info@sudburynepali.ca</p>
+                <p>फोन: +1 (705) XXX-XXXX</p>
+                <p>ठेगाना: सडबरी, ओन्टारियो, क्यानाडा</p>
+            </div>
+            <div class="footer-section">
+                <h3>सामाजिक सञ्जाल</h3>
+                <ul>
+                    <li><a href="#">फेसबुक</a></li>
+                    <li><a href="#">इन्स्टाग्राम</a></li>
+                    <li><a href="#">ट्विटर</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>उपयोगी लिंकहरू</h3>
+                <ul>
+                    <li><a href="#">क्यानाडा सरकार</a></li>
+                    <li><a href="#">नेपाली दूतावास</a></li>
+                    <li><a href="#">सडबरी सिटी</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
